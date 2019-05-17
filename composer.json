@@ -16,5 +16,18 @@
             "name": "Bhushan Mer",
             "email": "bhushanm@meditab.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bhushanm\\Laraman\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bhushanm\\Laraman\\Providers\\LaramanServiceProvider",
+                "Barryvdh\\Cors\\ServiceProvider"
+            ]
+        }
+    }
 }
