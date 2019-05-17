@@ -1,0 +1,20 @@
+{
+    "name": "bhushanm/laraman",
+    "description": "To create API using db configuration",
+    "type": "[library, project]",
+    "require": {
+        "laravel/passport": "^7.2",
+        "barryvdh/laravel-cors": "^0.11.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "predis/predis": "^1.1",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "laravel/framework": "^5.8"
+    },
+    "license": "Meditab",
+    "authors": [
+        {
+            "name": "Bhushan Mer",
+            "email": "bhushanm@meditab.com"
+        }
+    ]
+}
