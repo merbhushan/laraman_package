@@ -1,8 +1,9 @@
 <?php
 
-namespace Bhushanm\Laraman;
+namespace Bhushanm\Laraman\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Bhushanm\Laraman\Models\Scope;
 
 class LaramanServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,11 @@ class LaramanServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // dd(config("database.default"));
+        // Route::get('calculator', function(){
+        //     echo 'Hello from the calculator package!';
+        // });
+
     }
 
     /**
@@ -23,6 +28,7 @@ class LaramanServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Register package routes
+        Scope::generateRoutes();
     }
 }
